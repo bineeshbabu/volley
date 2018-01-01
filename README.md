@@ -58,6 +58,22 @@ request.addBody(key,value);
 ...
 ...
 ```
+### Response 
+```
+request.executeRequest( new VolleyCallback() {
+                                             @Override
+                                             public void getResponse(String response) {
+                                                 String jObject = response;
+                                                 Toast.makeText(getApplicationContext(), jObject, Toast.LENGTH_SHORT).show();
+                                             }
+
+                                             @Override
+                                             public void failedresponse(String message) {
+                                                 Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
+                                             }
+                                         }
+        );
+```
 ## Deployment
 
 Add additional notes about how to deploy this on a live system
