@@ -1,4 +1,4 @@
-package com.phacsin.easyvolley;
+package com.volley.easyvolley;
 
 import org.junit.Test;
 
